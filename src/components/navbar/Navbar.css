@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;800;900&display=swap");
+
+.cart__container {
+  padding-top: 3px;
+  background: var(--negro);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.cart__container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.cart__container .logo {
+  float: left;
+  font-size: 27px;
+  font-weight: 700;
+  line-height: 70px;
+  padding-left: 60px;
+  letter-spacing: 2px;
+}
+
+.cart__container .logo a {
+  text-decoration: none;
+  color: var(--naranja);
+  text-shadow: 2px 2px var(--azul);
+}
+
+.cart__container .logo::before {
+  background-image: url(../../images/cinelogo.png);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  vertical-align: sub;
+  content: "";
+}
+
+.cart__container ul {
+  float: right;
+  list-style: none;
+  margin-right: 40px;
+  position: relative;
+}
+
+.cart__container ul li {
+  text-align: left;
+  display: inline-block;
+  background: var(--negro);
+  margin: 0 5px;
+}
+
+.carrito {
+  display: inline-block;
+  text-align: left;
+  margin: 0 5px;
+}
+
+.cart__container ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 18px;
+  padding: 8px 15px;
+  transition: all 0.3s ease 0s;
+}
+
+.cart__container ul li a:hover {
+  color: var(--azul);
+  border-radius: 5px;
+  box-shadow: 0px 2px 0px var(--azul);
+}
+
+.cart__container ul ul li a:hover {
+  color: var(--azul);
+  box-shadow: none;
+}
+
+.cart__container ul ul {
+  position: absolute;
+  top: 90px;
+  border-top: 3px solid var(--azul);
+  opacity: 0;
+  visibility: hidden;
+  transition: top 0.3s ease;
+}
+
+.cart__container ul ul ul {
+  border-top: none;
+}
+
+.cart__container ul li:hover > ul {
+  top: 70px;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cart__container ul ul li {
+  position: relative;
+  margin: 0px;
+  width: 150px;
+  float: none;
+  display: list-item;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.cart__container ul ul li a {
+  line-height: 50px;
+}
+
+.cart__container ul ul ul li {
+  position: relative;
+  top: -70px;
+  left: 150px;
+}

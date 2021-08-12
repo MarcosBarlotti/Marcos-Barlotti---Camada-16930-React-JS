@@ -1,0 +1,18 @@
+button {
+  border: none;
+  cursor: pointer;
+  background-color: var(--negro);
+}
+
+.fa-shopping-cart {
+  padding: 8px 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: var(--blanco);
+  transition: all 0.3s ease 0s;
+}
+
+.fa-shopping-cart:hover {
+  color: var(--azul);
+  box-shadow: 0px 2px 0px var(--azul);
+}
