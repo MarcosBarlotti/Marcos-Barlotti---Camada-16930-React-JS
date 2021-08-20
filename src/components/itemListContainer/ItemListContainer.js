@@ -1,22 +1,39 @@
-import React from 'react'
-import Card from './cards/Card'
+import React, { useEffect, useState } from 'react'
+import { pedirDatos } from '../../helpers/pedirDatos'
+import { ItemList } from './ItemList'
+import "./ItemList.css"
 
-import "./ItemListContainer.css"
+export const ItemListContainer = () => {
+
+    const [data, setData] = useState([])
+    const [loading, setLoading] = useState(false)
+    
+    useEffect( ()=> {
+        setLoading(true)
+
+        pedirDatos()
+            .then(res => setData(res))
+            .catch(err => console.log(err))
+            .finally(()=> {
+                setLoading(false)
+            })
+
+    }, [])
 
 
-function ItemListContainer() {
     return (
-        <div>
-            <h3 className="h3__itemList ">Top 3 más vendidas</h3>
-            <div className="contenedorGeneralCards">
-            <Card/>
-            <Card/>
-            <Card/>
-            </div>
-        </div>
+        <>
+            {loading 
+             ?
+             <> 
+             <h4 className="cargando">Cargando...</h4>
+             <div class="loader"></div>
+             </>
+             : <ItemList productos={data}/>    
+            }
+        </>
     )
 }
 
-export default ItemListContainer
 
 
