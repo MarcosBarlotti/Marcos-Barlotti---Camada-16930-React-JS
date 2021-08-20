@@ -1,9 +1,16 @@
 import React from 'react'
 import "./Cart.css"
-function Cart() {
+
+
+function Cart({cantidad}) {
     return (
         <div>
-            <a className="cta" href="#"><button><i class="fas fa-shopping-cart"></i></button></a>
+            <a classNadme="cta" href="#">
+                <button>
+                    <i class="fas fa-shopping-cart"><span>{cantidad}</span></i>
+                    
+                </button>
+            </a>
         </div>
     )
 }

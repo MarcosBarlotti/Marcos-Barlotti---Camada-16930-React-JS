@@ -1,0 +1,13 @@
+.h3__itemList{
+    font: raleway;
+    text-align: center;
+    margin: 40px 0 80px;
+    font-size: 3rem;
+  }
+
+  .contenedorGeneralCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }

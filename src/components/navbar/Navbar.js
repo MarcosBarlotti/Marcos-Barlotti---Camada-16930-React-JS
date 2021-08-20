@@ -36,7 +36,7 @@ function Navbar() {
                 </li>
                 <li><a href="#">Contacto</a></li>
                 <div className="carrito">
-                <Cart/> 
+                <Cart cantidad = {0}/> 
                 </div>
                 </ul>
     </nav>
