@@ -1,46 +1,53 @@
 import React from 'react'
 import "./Navbar.css"
+import { Link } from 'react-router-dom'
 //COMPONENTES
 import Cart from "../cart/Cart"
 
 function Navbar() {
     return (
-        <>
+    
+    <div>
+
         <nav className="cart__container">
-            <div className="logo"><a href="#">CINETAZAS</a></div>
+           
+            <div className="logo">
+                <Link to={"/"}>CINETAZAS</Link>
+            </div>
+           
             <ul>
-                <li><a href="#">Inicio</a></li>
                 <li>
-                    <a href="#" className="sinBorde" >Productos</a>
-                    <ul>
-                        <li><a href="#">Cuadros</a></li>
-                        <li><a href="#">Vasos</a></li>
-                        <li><a href="#">Ilustraciones</a></li>
-                        <li>
-                            <a href="#">Tazas</a>
-                                <ul>
-                                    <li><a href="#">Cine</a></li>
-                                    <li><a href="#">Series</a></li>
-                                    <li><a href="#">Música</a></li>
-                                </ul>
-                        </li>
-                    </ul>
+                    <Link to={"/"}>Inicio</Link>
                 </li>
+
                 <li>
-                    <a href="#" className="sinBorde">Preguntas Frecuentes</a>
+                    <Link to={"/tazas"} className="sinBorde" >Tazas</Link>
                         <ul>
-                            <li><a href="#">Envios</a></li>
-                            <li><a href="#">QR</a></li>
-                            <li><a href="#">Personalizados</a></li>
+                            <li><Link to={"/category/starWars"}>Star Wars</Link></li>
+                            <li><Link to={"/category/friends"}>Friends</Link></li>
+                            <li><Link to={"/category/harrypotter"}>Harry Potter</Link></li>
                         </ul>
                 </li>
-                <li><a href="#">Contacto</a></li>
+                
+                <li>
+                    <Link to={"/preguntas"} className="sinBorde">Preguntas Frecuentes</Link>
+                </li>
+                
+                <li>
+                    <Link to={"/contacto"}>Contacto</Link>
+                </li>
+
                 <div className="carrito">
-                <Cart cantidad = {0}/> 
+                        <Cart cantidad = {0}/> 
                 </div>
-                </ul>
-    </nav>
-    </>
+
+                
+            
+            </ul>
+        
+        </nav>
+
+    </div>
     )
 }
 

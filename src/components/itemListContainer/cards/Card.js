@@ -1,7 +1,8 @@
 import React from 'react'
 import "./Card.css"
+import { Link } from 'react-router-dom'
 
-export const Item = ( {img, nombre, desc, precio} ) => {
+export const Item = ( {img, nombre, desc, precio, id} ) => {
 
 
     return (
@@ -14,7 +15,7 @@ export const Item = ( {img, nombre, desc, precio} ) => {
                         <h3 className="card__title">{nombre}</h3>
                         <span className="card__preci">{precio}</span>
                         <p className="card__description">{desc}</p>
-                        <a href="/" className="card__button">Comprar</a>
+                        <Link to={`/detail/${id}`} className="card__button">Ver Detalle</Link>
                     </div>
                 </div>
             </div>

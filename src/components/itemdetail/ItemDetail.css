@@ -1,0 +1,173 @@
+:root {
+    --first-color: #f2a20c;
+    --white-color: #e9eaec;
+    --dark-color: #272d40;
+    --dark-color-lighten: #f2f5ff;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 1rem;
+  }
+
+  *,
+  ::before::after {
+    box-sizing: border-box;
+  }
+  
+  .detalle__container{
+    margin-top: 8.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    height:100%;
+    width: 100%;
+  }
+
+  .detalle__img__container{
+    width: 45vh;
+    height: 45vh;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 4rem;
+    background-color: var(--dark-color);
+    border-radius: 1rem;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+
+  }
+
+  .detalle__img{
+    position: absolute;
+    padding-top: 1.5rem;
+    height: 40vh;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    z-index: 50;
+    transition: 0.5s ease;
+  }
+
+  .detalle__img2 {
+    position: absolute;
+    padding-top: 1.5rem;
+    height: 40vh;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    z-index: 20;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+
+  .detalle__img3 {
+    position: absolute;
+    padding-top: 1.5rem;
+    height: 40vh;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    z-index: 20;
+    transition: 0.5s ease;
+    opacity: 0;
+  }
+
+  .detalle__detalle{
+    background-color: var(--first-color);
+    height: 45vh;
+    width: 50%;
+    border-radius:1rem;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 3rem;
+    z-index: -10;
+}
+
+.detalle__titulo{
+    text-align: center;
+    font-size: 3rem;
+    color: var(--white-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.detalle__precio{
+    text-align: center;
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    color: var(--dark-color);
+    font-weight: 700;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.detalle__descripcion__principal{
+    text-align: justify;
+    font-size: 1.7rem;
+    width: 70%;
+    color: var(--white-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.detalle__descripcion__secundaria{
+    text-align: justify;
+    font-size: 1.3rem;
+    width: 70%;
+    color: var(--dark-color);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.detail__button{
+    padding: 0.5rem 3rem;
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s ease;
+    filter: drop-shadow(5px 10px 15px rgba(8, 9, 13, 0.4));
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.detail__button:hover {
+    color: var(--dark-color);
+    background-color: var(--white-color);
+  }
+
+  .detalle__img__container:hover .detalle__img {
+    transform: translate(10rem, -3rem) rotate(10deg);
+  }
+
+  .detalle__img__container:hover .detalle__img2 {
+    transform: translate(-10rem, -3rem) rotate(-10deg);
+    opacity: 1;
+  }
+
+  .detalle__img__container:hover .detalle__img3 {
+    transform: translate(0rem, -10rem);
+    opacity: 1;
+  }
+
+
+  .cargando {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .loader {
+    margin: auto;
+    margin-top: 2rem;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
