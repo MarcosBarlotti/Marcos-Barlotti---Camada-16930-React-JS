@@ -8,7 +8,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/r2d2.png",
         img2:"/imagenesProductos/r2d22.png",
-        img3:""
+        img3:"",
+        stock:"4"
     },
     { 
         id: 2,
@@ -19,7 +20,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/sables.png",
         img2:"/imagenesProductos/sables2.png",
-        img3:""
+        img3:"",
+        stock:"5"
     },
     { 
         id: 3, 
@@ -30,7 +32,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/starwars.png",
         img2:"/imagenesProductos/starwars2.png",
-        img3:""
+        img3:"",
+        stock:"6"
     },
     { 
         id: 4, 
@@ -41,7 +44,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/theMandalorian.png" ,
         img2:"/imagenesProductos/theMandalorian2.png",
-        img3:""
+        img3:"",
+        stock:"7"
     },
     { 
         id: 5,
@@ -52,7 +56,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/friendsCentral1.png",
         img2:"/imagenesProductos/friendsCentral2.png",
-        img3:""
+        img3:"",
+        stock:"8"
     },
     { 
         id: 6,
@@ -63,7 +68,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/friendsIlustraciones1.png",
         img2:"/imagenesProductos/friendsIlustraciones2.png",
-        img3:""
+        img3:"",
+        stock:"9"
     },
     { 
         id: 7,
@@ -74,7 +80,8 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/friendsPuerta1.png",
         img2:"/imagenesProductos/friendsPuerta2.png",
-        img3:""
+        img3:"",
+        stock:"10"
     },
     { 
         id: 8,
@@ -85,7 +92,9 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/friendStikers1.png",
         img2:"/imagenesProductos/friendStikers2.png",
-        img3:""
+        img3:"",
+        stock:"11"
+
     },
     { 
         id: 9,
@@ -96,7 +105,9 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/harryAuto1.png",
         img2:"/imagenesProductos/harryAuto2.png",
-        img3:""
+        img3:"",
+        stock:"12"
+
     },
     { 
         id: 10,
@@ -107,7 +118,9 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/harryMapa1.png",
         img2:"/imagenesProductos/harryMapa2.png",
-        img3:""
+        img3:"",
+        stock:"13"
+
     },
     { 
         id: 11,
@@ -118,7 +131,9 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/harryMinimal1.png",
         img2:"/imagenesProductos/harryMinimal2.png",
-        img3:""
+        img3:"",
+        stock:"14"
+
     },
     { 
         id: 12,
@@ -129,7 +144,9 @@ export const stock = [
         descLarga: "Personalizá la taza con tu escena o canción favorita, todas las tazas son aptas lavavajillas y microondas",
         img:"/imagenesProductos/harryTrama1.png",
         img2:"/imagenesProductos/harryTrama2.png",
-        img3:""
+        img3:"",
+        stock:"15"
+
     },
     
 ]
